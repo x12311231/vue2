@@ -1,3 +1,4 @@
+```
 #20221101
 ##ref属性
 1，被用来给元素或子组建注册引用信息（dom id的替代）
@@ -8,3 +9,5 @@
 
 ##输出默认配置信息(配置参考：https://cli.vuejs.org/config/#vue-config-js)
   vue inspect > output.js
+
+```
