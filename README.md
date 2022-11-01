@@ -5,3 +5,6 @@
 3,使用方式：
   打标识：<h1 ref="xxx"> ... </h1> | <SchoolL ref="xxx"> </SchoolL>
   获取：this.$refs.xxx
+
+##输出默认配置信息(配置参考：https://cli.vuejs.org/config/#vue-config-js)
+  vue inspect > output.js
