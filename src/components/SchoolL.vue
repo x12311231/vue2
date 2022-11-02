@@ -5,7 +5,7 @@
     <button @click="test">test</button>
     <button @click="updateProps">修改props</button>
   
-    <button @click="showName">show name</button>
+    <button @click="showName" v-say>show name</button>
   </div>
 </template>
 

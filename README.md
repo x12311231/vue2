@@ -59,4 +59,23 @@
     第二步使用混合
     * 全局混入：Vue.mixin(xxx)
     * 局部混入：{mixin:[xxx]}
+
+##plugins
+  功能：增强vue
+  本质：包含install方法的一个对象，install的第一个参数是Vue，第二个以后的参数是自定义传输的参数
+  定义插件：
+    export default {
+      install(Vue, c,d,e,f) {
+        Vue.filter('dataFormat', function(val) {
+          return val;
+        })
+
+        Vue.directive(fbind', {})
+
+        Vue.mixin({})
+      }
+    }
+  使用插件：
+    import plug from 'plug'
+    Vue.use(plug)
 ```
