@@ -1,10 +1,8 @@
 <template>
   <div>
-    <div v-text="msg" ref="title">School</div>
+    <div v-text="msg" ref="title">Student</div>
     <div>{{sname}}</div>
     <button @click="test">test</button>
-    <button @click="updateProps">修改props</button>
-  
     <button @click="showName">show name</button>
   </div>
 </template>
@@ -12,7 +10,7 @@
 <script>
 import { show1 } from '@/mixin'
 export default {
-  name: "SchoolL",
+  name: "StudentL",
   data() {
       return {
           data: "test"
@@ -23,10 +21,6 @@ export default {
     test() {
       // alert('hello')
       alert(this.$refs.title)
-    }
-    ,updateProps() {
-      // this.name = '北京大学';
-      this.sname = '北京大学'
     }
   }
   ,props: {
