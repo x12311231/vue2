@@ -10,4 +10,41 @@
 ##输出默认配置信息(配置参考：https://cli.vuejs.org/config/#vue-config-js)
   vue inspect > output.js
 
+##props
+  组建数据传递
+  1）<Demo name="xxx" />
+  2)
+  props:['name']
+  --------------
+  props:{
+    name:String
+  }
+  --------------
+  props:{
+    name:{
+      type:String
+      ,required:true
+      ,default:'defalut'
+    }
+  }
+
+  备注：props是只读的，如果进行修改，vue会发出警告，
+  若需传递值，后期又有修改需求，data里新建一个属性，把传递的值赋值到该属性
+   data() {
+      return {
+          ,sname: this.name // props属性不可直接修改
+      }
+  },
+  methods: {
+    ,updateProps() {
+      this.sname = '北京大学'
+    }
+  }
+  ,props: {
+    ,name: {
+      type:String,
+      required:true
+    }
+  }
+
 ```

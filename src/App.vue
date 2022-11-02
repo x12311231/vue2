@@ -2,7 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <SchoolL />
+    <SchoolL name="社会大学" msg="school components"/>
   </div>
 </template>
 
